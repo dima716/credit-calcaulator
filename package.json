@@ -1,0 +1,25 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "build": "gulp prod",
+    "dev": "gulp dev",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-useref": "^4.0.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3"
+  }
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <section class="promo-slide" id="promo-slide">
+    <div class="promo-slide__inner">
+      <div class="promo-slide__text">Сколько я могу заработать <br> на дебетовой карте?</div>
+      <button class="tinkoff-btn" id="promo-slide-btn" type="button">Узнать!</button>
+    </div>
+  </section>
+  <section class="main" id="main">
+    <div class="credit-calculator" id="credit-calculator">
+      <h1 class="credit-calculator__title">Как вы пользуетесь картой</h1>
+      <form>
+        <div class="form-row">
+          <div class="range-slider range-slider--spend">
+          <div class="range-slider__title">Трачу</div>
+          <input class="credit-sum__range custom-range" id="spend-range" value="90000" step="1000" type="range" min="0" max="250000">
+          <div class="range-slider__value">
+            <div class="range-slder__value-number" id="spend-range-value">0</div>&nbsp;
+            <div class="range-slder__value-text">Р/мес</div>
+          </div>
+          <div class="range-slider__mark" id="spend-range-mark">
+            3000&nbsp;Р/мес <br>
+            3.5%&nbsp;годовых
+          </div>
+        </div>
+        </div>
+        <div class="form-row">
+          <div class="range-slider range-slider--save">
+                  <div class="range-slider__title">Держу на счете</div>
+                  <input class="credit-sum__range custom-range" id="save-range" value="200000" step="1000" type="range" min="0" max="300000">
+                  <div class="range-slider__value">
+                    <div class="range-slder__value-number" id="save-range-value">0</div>&nbsp;
+                    <div class="range-slder__value-text">Р/мес</div>
+                  </div>
+                  <div class="range-slider__mark" id="save-range-mark">
+                    50000&nbsp;Р/мес <br>
+                    бесплатное обслуживание
+                  </div>
+                </div>
+        </div>
+      </form>
+    </div>
+    <div class="results" id="results">
+      <h1 class="results__title">Выгода за год</h1>
+      <div class="results__value" id="profit">
+        <span class="results__value-number" id="profit-value">0</span>&nbsp;Р
+      </div>
+      <ul class="results__list">
+        <li class="results__item">
+          <div class="results__item-title">Кэшбек 1% с покупок</div>
+          <div class="results__item-value">
+            <span class="results__item-value-number" id="cashback-purchases-value">10440</span>&nbsp;Р/год
+          </div>
+        </li>
+        <li class="results__item">
+          <div class="results__item-description">
+            <div class="results__item-title">Доходность 3.5% годовых</div>
+            <div class="results__item-note" id="cashback-balance-note">Увеличьте траты до 3000 Р/мес, чтобы получать доход с остатка</div>
+          </div>
+          <div class="results__item-value" id="cashback-balance">
+            <span class="results__item-value-number" id="cashback-balance-value">4445</span>&nbsp;Р/год
+          </div>
+        </li>
+        <li class="results__item">
+          <div class="results__item-description">
+            <div class="results__item-title">Обслуживание</div>
+            <div class="results__item-note" id="service-note">Держите на счете от 50 000 Р, чтобы не платить за обслуживание</div>
+          </div>
+          <div class="results__item-value" id="service-value">
+            Бесплатно
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button class="tinkoff-btn issue-card-btn" id="issue-card-btn" type="button">Оформить карту</button>
+  </section>
+
+  <!--build:js js/main.min.js-->
+  <script src="js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="js/vendor/rangeslider.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--endbuild-->
+</body>
+
+</html>
